@@ -1,10 +1,11 @@
 <?php
 /*
 Plugin Name: Category Checklist Tree
-Version: 1.0b
+Version: 1.0
 Description: Preserves the category hierarchy on the post editing screen
-Author Name: scribu
+Author: scribu
 Author URI: http://scribu.net
+Plugin URI: http://scribu.net/wordpress/category-checklist-tree
 */
 
 Category_Checklist::init();

@@ -17,3 +17,9 @@ This plugin removes that "feature".
 Just install and forget about it.
 
 Unfortunately, it requires WordPress 2.9.
+
+== Changelog ==
+
+= 1.0 =
+* initial release
+* [more info](http://scribu.net/wordpress/category-checklist-tree/cct-1-0.html)

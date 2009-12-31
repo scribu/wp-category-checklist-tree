@@ -2,8 +2,8 @@
 Contributors: scribu
 Donate link: http://scribu.net/paypal
 Tags: admin, ui, categories, hierarchy
-Requires at least: 2.9-rare
-Tested up to: 2.9-rare
+Requires at least: 2.9
+Tested up to: 2.9
 Stable tag: trunk
 
 Preserves the category hierarchy on the post editing screen

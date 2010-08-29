@@ -16,6 +16,8 @@ This plugin removes that "feature".
 
 Just install and forget about it.
 
+Links: [Plugin News](http://scribu.net/wordpress/category-checklist-tree) | [Author's Site](http://scribu.net)
+
 == Changelog ==
 
 = 1.1 =

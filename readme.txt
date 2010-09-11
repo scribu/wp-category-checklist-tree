@@ -12,7 +12,7 @@ Preserves the category hierarchy on the post editing screen
 
 On the post editing screen, after saving a post, you will notice that the checked categories are displayed on top, breaking the category hierarchy.
 
-This plugin removes that "feature".
+This plugin removes that "feature". Works with custom taxonomies too.
 
 Just install and forget about it.
 

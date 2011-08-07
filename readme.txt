@@ -3,7 +3,7 @@ Contributors: scribu
 Donate link: http://scribu.net/paypal
 Tags: admin, ui, categories, hierarchy
 Requires at least: 3.0
-Tested up to: 3.0
+Tested up to: 3.2
 Stable tag: trunk
 
 Preserves the category hierarchy on the post editing screen
@@ -19,6 +19,9 @@ Just install and forget about it.
 Links: [Plugin News](http://scribu.net/wordpress/category-checklist-tree) | [Author's Site](http://scribu.net)
 
 == Changelog ==
+
+= 1.2 =
+* scroll to first checked category. Props to Sven Kronshage for the suggestion.
 
 = 1.1 =
 * support custom hierarchical taxonomies

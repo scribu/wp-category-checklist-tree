@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Category Checklist Tree
-Version: 1.1
+Version: 1.2
 Description: Preserves the category hierarchy on the post editing screen
 Author: scribu
 Author URI: http://scribu.net
 Plugin URI: http://scribu.net/wordpress/category-checklist-tree
 
-Copyright (C) 2010 Cristi Burcă (scribu@gmail.com)
+Copyright (C) 2010-2011 Cristi Burcă (scribu@gmail.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -22,8 +22,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
-
-Category_Checklist::init();
 
 class Category_Checklist {
 
@@ -45,6 +43,30 @@ class Category_Checklist {
 			// don't use 'core' as priority
 			add_meta_box($tax_name . 'div', $label, array(__CLASS__, 'meta_box'), $post_type, 'side', 'high', array( 'taxonomy' => $tax_name ));
 		}
+
+		add_action('admin_footer', array(__CLASS__, 'script'));
+	}
+
+	// Scrolls to first checked category
+	function script() {
+?>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('[id$="-all"] > ul.categorychecklist').each(function() {
+			var $list = jQuery(this);
+			var $firstChecked = $list.find(':checked').first();
+
+			if ( !$firstChecked.length )
+				return;
+
+			var pos_first = $list.find(':checkbox').position().top;
+			var pos_checked = $firstChecked.position().top;
+
+			$list.closest('.tabs-panel').scrollTop(pos_checked - pos_first + 5);
+		});
+	});
+</script>
+<?php
 	}
 
 	// pasted from wp-admin/includes/meta-boxes.php -> post_categories_meta_box()
@@ -110,4 +132,6 @@ class Category_Checklist {
 	<?php
 	}
 }
+
+Category_Checklist::init();
 

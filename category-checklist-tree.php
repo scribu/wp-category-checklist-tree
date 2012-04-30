@@ -6,8 +6,6 @@ Description: Preserves the category hierarchy on the post editing screen
 Author: scribu
 Author URI: http://scribu.net
 Plugin URI: http://scribu.net/wordpress/category-checklist-tree
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 class Category_Checklist {

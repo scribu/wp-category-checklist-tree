@@ -1,8 +1,8 @@
 === Category Checklist Tree ===
 Contributors: scribu
 Tags: admin, ui, categories, hierarchy
-Requires at least: 3.0
-Tested up to: 3.2
+Requires at least: 3.4
+Tested up to: 3.4
 Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -20,6 +20,9 @@ Works with custom taxonomies too.
 Links: [Plugin News](http://scribu.net/wordpress/category-checklist-tree) | [Author's Site](http://scribu.net)
 
 == Changelog ==
+
+= 1.3 =
+* WP 3.4 compatibility
 
 = 1.2 =
 * scroll to first checked category. Props to Sven Kronshage for the suggestion.

@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Category Checklist Tree
-Version: 1.3-beta
+Version: 1.3
 Description: Preserves the category hierarchy on the post editing screen
 Author: scribu
 Author URI: http://scribu.net

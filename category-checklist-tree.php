@@ -29,7 +29,7 @@ class Category_Checklist {
 	jQuery(function(){
 		jQuery('[id$="-all"] > ul.categorychecklist').each(function() {
 			var $list = jQuery(this);
-			var $firstChecked = $list.find(':checked').first();
+			var $firstChecked = $list.find(':checkbox:checked').first();
 
 			if ( !$firstChecked.length )
 				return;

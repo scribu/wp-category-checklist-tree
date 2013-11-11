@@ -10,11 +10,11 @@ Plugin URI: http://scribu.net/wordpress/category-checklist-tree
 
 class Category_Checklist {
 
-	function init() {
+	static function init() {
 		add_filter( 'wp_terms_checklist_args', array( __CLASS__, 'checklist_args' ) );
 	}
 
-	function checklist_args( $args ) {
+	static function checklist_args( $args ) {
 		add_action( 'admin_footer', array( __CLASS__, 'script' ) );
 
 		$args['checked_ontop'] = false;
@@ -23,7 +23,7 @@ class Category_Checklist {
 	}
 
 	// Scrolls to first checked category
-	function script() {
+	static function script() {
 ?>
 <script type="text/javascript">
 	jQuery(function(){
